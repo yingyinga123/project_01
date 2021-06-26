@@ -1,0 +1,26 @@
+git的使用方法
+1：git config help ----显示config有哪些配置
+git config -h
+
+2:  使用一个文件夹成为Git仓库：打开Gitbash ，然后进行git init
+
+3 ：git status 查看文件处于什么状态
+      git status is
+
+4:  git add index.html:  index.html为我们要跟踪的文件
+
+5：git commit -m "index.html": index.html为我们要提交的文件
+
+6：git add . :将新增和修改的文件加入暂存区
+
+7：git reset HEAD index.html：index.html为我要讲index.html移出暂存区
+
+8：git rm -f index.html:  从Git仓库和工作区中同时移出index.html文件
+     git rm --cached index.html:  只从仓库中移出，但保留工作区
+
+9：git log :回顾提交历史
+
+git log --pretty=oneline：在一行上显示所有提交历史
+git reset --hard<commitID>：根据指定的ID回退到指定版本
+git reflog --pretty=online：查看命令历史操作
+git reset --hart<commitID>：再次根据最新提交的ID，跳转到最新版本
